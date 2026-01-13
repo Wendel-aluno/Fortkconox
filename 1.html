@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastrar • Fortkconox</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="Mobile.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="app-screen">
+    <div class="top-logo"><img src="logo.jpeg" alt="logo"></div>
+
+    <div class="card-mobile">
+      <h2>Criar Conta</h2>
+
+      <input id="regName" type="text" placeholder="Nome completo">
+      <input id="regEmail" type="email" placeholder="E-mail">
+      <input id="regPass" type="password" placeholder="Senha">
+      <input id="regConfirm" type="password" placeholder="Confirmar senha">
+
+      <button class="btn-big" onclick="register(regName.value, regEmail.value, regPass.value, regConfirm.value)">
+        Cadastrar
+      </button>
+
+      <p class="small">
+        Já tem conta? <a href="2.html" style="color:var(--accent)">Fazer login</a>
+      </p>
+    </div>
+  </div>
+</body>
+</html>

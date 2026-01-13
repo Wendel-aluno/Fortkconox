@@ -1,0 +1,109 @@
+/* ===== MODO APP PARA CELULAR ===== */
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--bg);
+}
+
+/* Fundo padrão de todas as telas */
+body, .app-screen {
+    background: url("img/Wallpaper.jpeg") no-repeat center center fixed;
+    background-size: cover;
+    background-color: #000; /* fallback */
+    min-height: 100vh;
+    width: 100%;
+}
+
+.app-screen {
+    position: relative;
+    padding: 20px;
+}
+
+.app-screen::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.45); /* escurece um pouco */
+    backdrop-filter: blur(2px);
+    z-index: 0;
+}
+
+.app-screen > * {
+    position: relative;
+    z-index: 1;
+}
+
+.card-mobile {
+  background: #0b0b0b;
+  padding: 20px;
+  border-radius: 16px;
+  width: 100%;
+  margin-top: auto;
+  box-shadow: 0 8px 26px rgba(0,0,0,0.7);
+}
+
+/* Logo topo */
+.top-logo {
+  width: 110px;
+  height: 110px;
+  margin: 24px auto 10px auto;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 18px rgba(49,149,222,0.35);
+}
+.top-logo img { width:100%; height:100%; object-fit:cover; display:block; }
+
+/* texts */
+h1,h2 { color:var(--accent); margin:0 0 8px 0; }
+p { color:var(--muted); }
+
+/* inputs */
+input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #0f0f0f;
+  border: 1px solid #141414;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+}
+input::placeholder { color:#7f8b95; }
+
+/* buttons */
+.btn-big {
+  width: 100%;
+  padding: 14px;
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight:700;
+  cursor:pointer;
+}
+.btn-big:hover { background: var(--accent-hover); }
+
+/* helper small */
+.small {
+  font-size: 13px;
+  color: var(--muted);
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* utilities for module pages */
+.page-header { display:flex; align-items:center; gap:10px; margin-bottom:12px; }
+.back-btn { background:transparent; color:var(--muted); border:0; font-size:16px; padding:6px 8px; cursor:pointer; }
+
+/* visual circle for waves */
+#waveCircle {
+  width:140px; height:140px; border-radius:50%; margin:18px auto; background: rgba(49,149,222,0.18); display:block;
+  transition: all .2s ease;
+}
