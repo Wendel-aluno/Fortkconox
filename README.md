@@ -1,2 +1,0 @@
-# Fortkconox
-Aplicativo de Segurança
