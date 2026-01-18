@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Câmeras • Fortkconox</title>
+  <link rel="stylesheet" href="Css.css">
+  <link rel="stylesheet" href="Mobile.css">
+  <script src="Js.js" defer></script>
+</head>
+<body>
+  <div class="app-screen">
+    <div style="display:flex; align-items:center; gap:8px;">
+      <button class="back-btn" onclick="location.href='3.html'">← Voltar</button>
+      <h2 style="margin:0">Câmeras</h2>
+    </div>
+
+    <div class="card-mobile">
+      <p class="muted">Toque sobre uma câmera para abrir feed simulado.</p>
+
+      <div class="camera-grid" style="margin-top:8px;">
+        <div class="camera" onclick="openCamera(1)">
+          <div class="placeholder">Câmera 01</div>
+          <h4 style="margin:8px 0 0 0; color:var(--text)">Entrada Principal</h4>
+        </div>
+
+        <div class="camera" onclick="openCamera(2)">
+          <div class="placeholder">Câmera 02</div>
+          <h4 style="margin:8px 0 0 0; color:var(--text)">Corredor</h4>
+        </div>
+
+        <div class="camera" onclick="openCamera(3)">
+          <div class="placeholder">Câmera 03</div>
+          <h4 style="margin:8px 0 0 0; color:var(--text)">Garagem</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

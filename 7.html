@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Alarmes • Fortkconox</title>
+  <link rel="stylesheet" href="Css.css">
+  <link rel="stylesheet" href="Mobile.css">
+  <script src="Js.js" defer></script>
+</head>
+<body>
+  <div class="app-screen">
+    <div style="display:flex; align-items:center;">
+      <button class="back-btn" onclick="location.href='3.html'">← Voltar</button>
+      <h2 style="margin-left:8px">Alarmes</h2>
+    </div>
+
+    <div class="card-mobile">
+      <p class="muted">Ative ou desative a sirene (simulação).</p>
+
+      <div style="display:flex; gap:8px; margin-top:10px;">
+        <button id="alarmOn" class="btn-big">Ativar Alarme</button>
+        <button id="alarmOff" class="ghost">Desativar</button>
+      </div>
+
+      <p class="small" style="margin-top:12px;">Ao ativar o alarme, o aparelho tocará e (se disponível) vibrará.</p>
+    </div>
+  </div>
+</body>
+</html>
