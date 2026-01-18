@@ -9,7 +9,7 @@ body, html {
 
 /* Fundo padrão de todas as telas */
 body, .app-screen {
-    background: url("img/wallpaper.jpeg") no-repeat center center fixed;
+    background: url("wallpaper.jpeg") no-repeat center center fixed;
     background-size: cover;
     background-color: #000; /* fallback */
     min-height: 100vh;
