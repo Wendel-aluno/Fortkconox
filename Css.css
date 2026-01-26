@@ -82,3 +82,34 @@ nav.sidebar h3{ margin:0 0 10px 0; color:var(--accent); }
   .dashboard{ grid-template-columns: 1fr; }
   .card{ padding:18px; }
 }
+/* ========================== CONTAINER RESPONSIVO =============================*/
+/* Wrapper geral */
+.app-screen {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+/*================ DESKTOP (TELAS GRANDES) ==================*/
+@media (min-width: 768px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .app-screen {
+        max-width: 420px;
+        min-height: 90vh;
+        border-radius: 20px;
+        box-shadow: 0 0 30px rgba(0,0,0,0.6);
+    }
+    
+    /* Grid do dashboard fica mais elegante */
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Cards mais espaçosos */
+    .card-mobile {
+        padding: 22px;
+    }
+}
